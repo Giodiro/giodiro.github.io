@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="description" content="TODO: Insert description"> -->
+  <meta name="author" content="Giacomo Meanti">
+
+  <title>Giacomo Meanti</title>
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+
+<body>
+
+<div class="flex-col" id="body-container">
+  <div class="flex-row" id="main-container">
+    <nav>
+      <div class="flex-col">
+        <p class="nav-title title-color">Useful links</p>
+        <p class="nav-element"><a href="https://www.github.com/Giodiro">GitHub</a></p>
+        <p class="nav-element"><a href="">Google Scholar</a></p>
+        <p class="nav-element"><a href="assets/cv_23_01.pdf">Curriculum</a></p>
+      </div>
+    </nav>
+
+    <main>
+      <div class="flex-col">
+        <section id="about-me">
+          <h2>Giacomo Meanti</h2>
+          <div class="flex-row">
+            <div class="content-col-1">
+              <img id="portrait" src="assets/portrait.jpg" alt="G. Meanti portrait photograph">
+            </div>
+            <div class="content-col-2">
+              <p>I am a PostDoc at the <a href="https://www.iit.it">Istituto Italiano di Tecnologia</a>, in the <a href="https://www.iit.it/web/iit-mit-usa">IIT @ MIT</a> lab with Lorenzo Rosasco.
+              I'm interested in developing efficient algorithms for shallow learning: in particular kernel models but also more recently neural radiance fields (NeRFs).</p>
+              <p>I hold a PhD from the University of Genova (at the <a href="https://malga.unige.it/">MaLGa group</a>), where I developed the <a href="https://www.github.com/falkonml/falkon">Falkon</a> library, the state of the art solver for approximate kernel ridge regression (training on the 1B point <i>Taxi</i> dataset in 1 hour).</p>
+              <p>More recently I'm focusing on algorithmic challenges in the natural sciences, applying fast kernel methods to molecular dynamics (more details <a href="https://arxiv.org/abs/2306.04520">here</a>) and atomistic energy estimation.</p>
+              <p>You can <strong>contact me</strong> by e-mail at giacomo [dot] meanti [at] gmail [dot] com</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Updates</h2>
+          <ul id="update-list">
+            <li class="update">
+              <p><span class="date">21/06/23</span> At <a href="https://cvpr2023.thecvf.com/">CVPR</a> to present <a href="https://sarafridov.github.io/K-Planes">K-Planes</a>: an efficient NeRF algorithm in arbitrary dimensions.</p>
+            </li>
+            <li class="update">
+              <p><span class="date">07/06/23</span> Our paper on efficient Koopman operator learning with the Nyström approximation, with applications to the study of dynamical systems is <a href="https://arxiv.org/abs/2306.04520">available on ArXiv</a>!</p>
+            </li>
+            <li class="update">
+              <p><span class="date">30/05/23</span> I completed my PhD defense! You can check out the <a href="assets/thesis_presentation.pdf">slides</a> or the full thesis <a href="assets/meanti_phd_thesis.pdf">"Large Scale Kernel Methods for Fun and Profit"</a>.</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <span>Copyright 2023 – Giacomo Meanti</span>
+  </footer>
+</div>
+
+
+</body>
+</html>

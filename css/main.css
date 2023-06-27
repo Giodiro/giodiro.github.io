@@ -1,0 +1,120 @@
+/* Links */
+a:hover {
+  border-bottom: 1px gray dotted;
+}
+a {
+  color: #39a34c;
+  text-decoration: none;
+}
+nav .nav-element a:link, nav .nav-element a:visited, nav .nav-element a:hover {
+  color: #3db553;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1.3em;
+}
+
+/* Generic containers */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1st level container */
+#body-container {
+  max-width: 1300px;
+}
+/* 2nd level container */
+#main-container {
+  align-items: stretch;
+  justify-content: flex-start;
+  /* Navbar and text start in a column */
+  flex-direction: column;
+}
+@media all and (min-width: 460px) { /* Navbar on the left if screen is large enough */
+  #main-container {
+    flex-direction: row;
+  }
+}
+
+/* Nav */
+main, nav {
+  margin: 4px;
+  padding: 1em 1.5em 0px 1em;
+}
+#main-container nav {
+  flex-shrink: 0; /* Never shrink the nav */
+  flex-grow: 1;   /* Grow it very slowly */
+  background-color: rgba(188, 188, 188, 0.3);
+  border-color: rgba(188, 188, 188, 0.6);
+  border-style: solid;
+  border-width: 1px;
+}
+nav .flex-col {
+  flex-wrap: nowrap;
+  justify-content: center;
+
+}
+nav p {
+  font-size: 1.em;
+}
+nav p.nav-title {
+  font-weight: 600;
+  margin: 5px 0px 10px 0px;
+  padding: 0 0 3px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+nav p.nav-element {
+  margin: 5px 0px 5px 5px;
+}
+
+
+/* Main content */
+#main-container main {
+  flex-grow: 15;
+  flex-shrink: 1;
+}
+main h2 {
+  margin: 5px 0 .3em 0;
+}
+
+.date {
+  font-style: italic;
+}
+
+/* About me section */
+#portrait {
+  max-width: 200px;
+}
+#about-me .flex-row {
+  flex-direction: row-reverse; /* portrait after text when not wrapped */
+  align-items: center;         /* only affects when not wrapped. */
+  justify-content: flex-end;   /* only affects when wrapped. */
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+.content-col-1 { /* portrait */
+}
+.content-col-2 { /* text */
+  flex: 2 75%;  /* This determines when text and pic are wrapped */
+}
+
+
+/* footer */
+footer {
+  font-size: small;
+  color: #727579;
+  text-align: center;
+}
+
+
+/* Images */
+img {
+  width: 100%;
+}
